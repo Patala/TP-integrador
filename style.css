@@ -1,3 +1,4 @@
+/* css de 1-login */
 .contenedorLogin{
     display:flex;
     flex-direction:column;
@@ -36,3 +37,54 @@
     text-align: center;
 }
 
+/* css de 2-recuperacion-de-contraseña */
+.contenedorRecuperacionDeContraseña{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    margin:0 auto;
+    text-align: center;
+    line-height:3rem;
+    margin-top: 5rem;
+}
+
+.recuperarContraseña{
+    font-weight:bold;
+    font-size: 2.5rem;
+    text-align: center;
+    width:100%;
+}
+
+.registrarse{
+    margin: 0 auto;
+    text-align: right;
+    margin-bottom: 1rem;
+    width:100%;
+    padding-right:42.5%;
+}
+
+.botonEnviarEmail{
+    text-align: center;
+    border: 1px;
+    border-style:solid;
+    background-color: rgba(95, 235, 95, 0.795);
+    border-radius: 3px;
+    padding-left:2rem;
+    padding-right:2rem;
+    margin-bottom: 1.2rem;
+    margin-left: 40%;
+    margin-right: 2rem;
+}
+
+.botonCancelar{
+    text-align: center;
+    border: 1px;
+    border-style:solid;
+    background-color: red;
+    border-radius: 3px;
+    padding-left:2rem;
+    padding-right:2rem;
+    margin-bottom: 1.2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
