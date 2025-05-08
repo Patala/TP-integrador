@@ -1,0 +1,38 @@
+.contenedorLogin{
+    display:flex;
+    flex-direction:column;
+    margin:0 auto;
+    line-height:2rem;
+}
+
+.imagen{
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.logo{
+    border-radius: 50px;
+}
+
+.login{
+    margin: 0 auto;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.botonIniciarSesion{
+    text-align: center;
+    margin: 0 auto;
+    border: 1px;
+    border-style:solid;
+    background-color: rgba(95, 235, 95, 0.795);
+    border-radius: 3px;
+    padding-left:5rem;
+    padding-right:5rem;
+    margin-bottom: 1.2rem;
+}
+
+.hyperlink{
+    text-align: center;
+}
+
