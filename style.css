@@ -1,9 +1,9 @@
-/* css de 1-login */
+/* css de index */
 .contenedorLogin{
     display:flex;
     flex-direction:column;
     margin:0 auto;
-    line-height:2rem;
+    line-height:3rem;
 }
 
 .imagen{
@@ -21,12 +21,12 @@
     margin-bottom: 1rem;
 }
 
-.botonIniciarSesion{
+.botonIniciarSesion {
     text-align: center;
     margin: 0 auto;
     border: 1px;
     border-style:solid;
-    background-color: rgba(95, 235, 95, 0.795);
+    background-color: rgba(43, 255, 0, 0.5);
     border-radius: 3px;
     padding-left:5rem;
     padding-right:5rem;
@@ -50,7 +50,7 @@
 
 .recuperarContraseña{
     font-weight:bold;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     text-align: center;
     width:100%;
 }
@@ -67,10 +67,10 @@
     text-align: center;
     border: 1px;
     border-style:solid;
-    background-color: rgba(95, 235, 95, 0.795);
+    background-color: rgba(43, 255, 0, 0.5);
     border-radius: 3px;
-    padding-left:2rem;
-    padding-right:2rem;
+    padding-left:3rem;
+    padding-right:3rem;
     margin-bottom: 1.2rem;
     margin-left: 40%;
     margin-right: 2rem;
@@ -80,11 +80,42 @@
     text-align: center;
     border: 1px;
     border-style:solid;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.5);
     border-radius: 3px;
-    padding-left:2rem;
-    padding-right:2rem;
+    padding-left:3rem;
+    padding-right:3rem;
     margin-bottom: 1.2rem;
     margin-left: 2rem;
     margin-right: 2rem;
+}
+
+/* css de 3-registro-de-usuario */
+.contenedorRegistroDeUsuario{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    margin:0 auto;
+    text-align: center;
+    line-height: 4rem;
+    margin-top: 1rem;
+    padding-left: 8rem;
+    
+}
+
+.Titulo{
+    font-weight:bold;
+    font-size: 2.5rem;
+    text-align: left;
+    width: 100%;
+}
+
+.IngresoDeDatos{
+    text-align: right;
+    line-height: 3rem;
+    margin-right: 5rem;
+}
+
+.MetodoDePago{
+    text-align: left;
+    line-height: 2rem;
 }

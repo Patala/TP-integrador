@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro de usuario</title>
+</head>
+
+<body>
+    <main class="contenedorRegistroDeUsuario">
+        <article class="Titulo">
+            Registrarse <br>
+        </article>
+        <article class="IngresoDeDatos">
+            Nombre &nbsp&nbsp&nbsp&nbsp <input type=text name="Nombre" placeholder="Nombre" style="height:2rem"><br>
+            Apellido &nbsp&nbsp&nbsp&nbsp <input type=text name="Apellido" placeholder="Apellido"
+                style="height:2rem"><br>
+            E-mail &nbsp&nbsp&nbsp&nbsp <input type=text name="e-mail" placeholder="Ingrese email"
+                style="height:2rem"><br>
+            Nombre de usuario &nbsp&nbsp&nbsp&nbsp <input type=text name="NombreDeUsuario"
+                placeholder="Nombre de usuario" style="height:2rem"><br>
+            Contraseña &nbsp&nbsp&nbsp&nbsp <input type=password id="contraseña" placeholder="Contraseña"
+                style="height:2rem"><br>
+            Repetir contraseña &nbsp&nbsp&nbsp&nbsp <input type=password id="contraseña"
+                placeholder="Repetir contraseña" style="height:2rem"><br>
+        </article>
+        <article class="MetodoDePago">
+            Método de pago<br>
+            <label class="Opciones">
+                <input type="radio" id="Tarjeta" name="MetodoDePago"> Tarjeta de crédito <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="Tarjeta" placeholder="Número de tarjeta"
+                    style="height:2rem">&nbsp&nbsp<input type="text" name="CVC" placeholder="CVC" style=height:2rem>
+                <br>
+                <input type="radio" id="Cupon" name="MetodoDePago"> Cupon de pago <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="Tipo"> Pago facil&nbsp&nbsp <input type="radio"
+                    name="Tipo">RapiPago<br>
+                <input type="radio" id="Transferencia" name="MetodoDePago"> Transferencia bancaria <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CBU: 2183909411100018971375
+            </label>
+        </article>
+        <article class="BotonConfirmar">
+            <a href="index.html">Confirmar<br>
+            </a>
+        </article>
+        <article class="BotonCancelar">
+            <a href="index">Cancelar<br>
+            </a>
+        </article>
+    </main>
+</body>
+
+</html>
