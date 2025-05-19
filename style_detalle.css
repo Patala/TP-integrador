@@ -1,0 +1,48 @@
+.contenedor1{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+
+
+.contenedor_simi{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    ;
+}
+
+.contenedor_nav{
+display: grid;
+grid-template-columns: 25% 25% 25% 25%;
+list-style-type: none;
+
+}
+
+.contenedor2{
+   justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    margin: 10px;
+
+}
+
+button
+{
+    color: white;
+    background-color:crimson;
+    border-radius: 20px;
+    border-color: inherit;
+    padding: 10px;
+    
+}
+
+img{
+    border-radius: 7px;
+}
+
+iframe{
+    border-radius: 7px;
+}
