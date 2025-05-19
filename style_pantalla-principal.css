@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header component*/
+.header__list {
+    display: flex;
+    width: 100%;    
+    list-style: none;    
+}
+
+.header__list-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+}
+
+.header__list-item {   
+    display: flex;
+    flex: 1;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+}
+
+.header__list-item:hover {
+  background-color: grey; 
+}
+
+.header__list-item.active .btn-primary {
+  color: black;
+}
+
+.btn-primary:link,
+.btn-primary:visited,
+.btn-primary:hover,
+.btn-primary:active {
+  color: black; /* o el color que quieras */
+  text-decoration: none;
+}
+
+.btn-primary {
+    text-decoration: none;
+}
+
+/*Form component*/
+.formulario-filtros {
+  display: flex;
+  justify-content: space-between; /* <-- separa los elementos hacia los extremos */
+  align-items: flex-end;
+  max-width: 100%;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+   
+}
+
+.filtro-categoria label {
+  margin-right: 3rem;
+}
+
+.filtro-categoria,
+.filtro-busqueda {
+  display: flex; 
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 500px; 
+  align-items: center;
+}
+
+select, input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 400px;
+}
+
+.filtro-busqueda select, input{
+    border-radius: 9999px;
+}
+
+
+.input-lupa {
+  background-image: url("img icons/magnifying-glass-solid.svg"); /* Cambiá esto por el nombre real de tu archivo */
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 10px center;
+  padding-left: 40px; /* espacio para la lupa */
+  height: 40px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 9999px;
+}
+
+/*Grilla*/
+
+.grilla-peliculas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 3rem;
+}
+
+.pelicula img {
+  width: 100%;
+  height: auto;
+  border-radius:5px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+/*.pelicula img:hover {
+  transform: scale(1.03);
+}*/
+
