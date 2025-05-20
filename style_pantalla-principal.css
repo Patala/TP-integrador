@@ -115,6 +115,10 @@ select, input {
   transition: transform 0.2s;
 }
 
+body{
+    background-image: url("img icons/fondo02.png");
+}
+
 /*.pelicula img:hover {
   transform: scale(1.03);
 }*/
