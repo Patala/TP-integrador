@@ -14,24 +14,42 @@
             Registrarse <br>
         </article>
         <article class="IngresoDeDatos">
-            Nombre &nbsp&nbsp&nbsp&nbsp <input type=text name="Nombre" placeholder="Nombre" style="height:2rem"><br>
-            Apellido &nbsp&nbsp&nbsp&nbsp <input type=text name="Apellido" placeholder="Apellido"
-                style="height:2rem"><br>
-            E-mail &nbsp&nbsp&nbsp&nbsp <input type=text name="e-mail" placeholder="Ingrese email"
-                style="height:2rem"><br>
-            Nombre de usuario &nbsp&nbsp&nbsp&nbsp <input type=text name="NombreDeUsuario"
-                placeholder="Nombre de usuario" style="height:2rem"><br>
-            Contraseña &nbsp&nbsp&nbsp&nbsp <input type=password id="contraseña" placeholder="Contraseña"
-                style="height:2rem"><br>
-            Repetir contraseña &nbsp&nbsp&nbsp&nbsp <input type=password id="contraseña"
-                placeholder="Repetir contraseña" style="height:2rem"><br>
+            <div class="fila">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" name="Nombre" placeholder="Nombre">
+            </div>
+
+            <div class="fila">
+                <label for="apellido">Apellido</label>
+                <input id="apellido" type="text" name="Apellido" placeholder="Apellido">
+            </div>
+
+            <div class="fila">
+                <label for="email">E-mail</label>
+                <input id="email" type="text" name="e-mail" placeholder="Ingrese email">
+            </div>
+
+            <div class="fila">
+                <label for="usuario">Nombre de usuario</label>
+                <input id="usuario" type="text" name="NombreDeUsuario" placeholder="Nombre de usuario">
+            </div>
+
+            <div class="fila">
+                <label for="contraseña">Contraseña</label>
+                <input id="contraseña" type="password" name="Contraseña" placeholder="Contraseña">
+            </div>
+
+            <div class="fila">
+                <label for="RepetirContraseña">Repetir contraseña</label>
+                <input id="RepetirContraseña" type="password" name="RepetirContraseña" placeholder="Repetir contraseña">
+            </div>
         </article>
         <article class="MetodoDePago">
             Método de pago<br>
             <label class="Opciones">
                 <input type="radio" id="Tarjeta" name="MetodoDePago"> Tarjeta de crédito <br>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="Tarjeta" placeholder="Número de tarjeta"
-                    style="height:2rem">&nbsp&nbsp<input type="text" name="CVC" placeholder="CVC" style=height:2rem>
+                <input type="text" name="Tarjeta" placeholder="Número de tarjeta">&nbsp&nbsp<input type="text"
+                    name="CVC" placeholder="CVC">
                 <br>
                 <input type="radio" id="Cupon" name="MetodoDePago"> Cupon de pago <br>
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="Tipo"> Pago facil&nbsp&nbsp <input type="radio"
@@ -40,13 +58,15 @@
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CBU: 2183909411100018971375
             </label>
         </article>
-        <article class="BotonConfirmar">
-            <a href="index.html">Confirmar<br>
-            </a>
-        </article>
-        <article class="BotonCancelar">
-            <a href="index">Cancelar<br>
-            </a>
+        <article class="Botones">
+            <p class="botonRegistroConfirmar">
+                <a href="index.html">Confirmar<br>
+                </a>
+            </p>
+            <p class="botonRegistroCancelar">
+                <a href="index.html">Cancelar<br>
+                </a>
+            </p>
         </article>
     </main>
 </body>

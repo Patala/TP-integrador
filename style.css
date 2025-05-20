@@ -28,8 +28,7 @@
     border-style:solid;
     background-color: rgba(43, 255, 0, 0.5);
     border-radius: 3px;
-    padding-left:5rem;
-    padding-right:5rem;
+    width:15rem;
     margin-bottom: 1.2rem;
 }
 
@@ -53,40 +52,43 @@
     font-size: 2.3rem;
     text-align: center;
     width:100%;
+    margin-bottom:2rem;
 }
 
-.registrarse{
+.Registrarse{
     margin: 0 auto;
     text-align: right;
-    margin-bottom: 1rem;
+    margin-bottom:2rem;
+}
+
+.BotonesRecuperarContraseña{
+    display:flex;
+    flex-direction:row;
+    text-align:center;
+    white-space:nowrap;
     width:100%;
-    padding-right:42.5%;
 }
 
 .botonEnviarEmail{
+    margin: 0 auto;
     text-align: center;
     border: 1px;
     border-style:solid;
     background-color: rgba(43, 255, 0, 0.5);
     border-radius: 3px;
-    padding-left:3rem;
-    padding-right:3rem;
-    margin-bottom: 1.2rem;
+    width: 10rem;
     margin-left: 40%;
-    margin-right: 2rem;
 }
 
 .botonCancelar{
+    margin: 0 auto;
     text-align: center;
     border: 1px;
     border-style:solid;
     background-color: rgba(255, 0, 0, 0.5);
     border-radius: 3px;
-    padding-left:3rem;
-    padding-right:3rem;
-    margin-bottom: 1.2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    width: 10rem;
+    margin-right: 40%;
 }
 
 /* css de 3-registro-de-usuario */
@@ -94,12 +96,13 @@
     display:flex;
     flex-wrap:wrap;
     flex-direction:row;
+    justify-content: left;
+    white-space:nowrap;
     margin:0 auto;
     text-align: center;
     line-height: 4rem;
     margin-top: 1rem;
     padding-left: 8rem;
-    
 }
 
 .Titulo{
@@ -110,12 +113,53 @@
 }
 
 .IngresoDeDatos{
-    text-align: right;
+    display:flex;
+    flex-direction: column;
+    text-align:right;
     line-height: 3rem;
     margin-right: 5rem;
+    width:40%;
+}
+
+.fila{
+    justify-content:flex-end;
+}
+
+.fila input {
+    padding:0.55rem;
+    margin-left: 1rem;
 }
 
 .MetodoDePago{
     text-align: left;
     line-height: 2rem;
+    width:40%;
+}
+
+.Botones{
+    display:flex;
+    flex-direction:row;
+    text-align:right;
+    white-space:nowrap;
+    width:100%;
+}
+
+.botonRegistroConfirmar{
+    text-align: center;
+    border: 1px;
+    border-style:solid;
+    background-color: rgba(43, 255, 0, 0.5);
+    border-radius:3px;
+    margin-left:50%;
+    margin-right:2rem;
+    width:10rem;
+}
+
+.botonRegistroCancelar{
+    text-align: center;
+    border: 1px;
+    border-style:solid;
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 3px;
+    width:10rem;
 }
