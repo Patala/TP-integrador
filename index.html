@@ -13,11 +13,15 @@
         <article class="imagen">
             <img class="logo" src="unflix.png" alt="Logo">
         </article>
-        <article class="login"> <!-- Buscar alternativa a los &nbsp? Dar estilo a  los inputs en .css?--> 
-            Nombre de usuario &nbsp&nbsp&nbsp&nbsp <input type=text name="nombre" placeholder="Nombre de usuario"
-                style="height:2rem"><br>
-            Contraseña &nbsp&nbsp&nbsp&nbsp <input type=password id="contraseña" placeholder="Contraseña"
-                style="height:2rem"><br>
+        <article class="login">
+            <div class="fila">
+                <label for="usuario">Nombre de usuario</label>
+                <input id="usuario" type="text" name="NombreDeUsuario" placeholder="Nombre de usuario">
+            </div>
+            <div class="fila">
+                <label for="contraseña">Contraseña</label>
+                <input id="contraseña" type="password" name="contraseña" placeholder="Contraseña">
+            </div>
         </article>
         <article class="botonIniciarSesion"> <!-- Modificar estilos de los botones -->
             <a href="4-pantalla-principal.html">Iniciar sesion<br>
