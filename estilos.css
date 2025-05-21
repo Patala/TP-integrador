@@ -104,3 +104,7 @@ h1{
   font-size: 0.9rem;
   margin-top: 2rem;
 }
+
+html, body {
+  height: 100%;
+}
