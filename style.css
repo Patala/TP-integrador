@@ -1,9 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    flex: 1;
+}
+
+.contenedorFooter{
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Footer*/
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  width: 100%;
+  margin-left: 0;
+}
+
 /* css de index */
 .contenedorLogin{
     display:flex;
     flex-direction:column;
     margin:0 auto;
-    line-height:3rem;
+    line-height:2rem;
+    flex: 1;
 }
 
 .imagen{
@@ -38,13 +72,11 @@
 
 /* css de 2-recuperacion-de-contraseña */
 .contenedorRecuperacionDeContraseña{
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:row;
-    margin:0 auto;
-    text-align: center;
-    line-height:3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 5rem;
+    line-height: 2rem;
 }
 
 .recuperarContraseña{
@@ -62,23 +94,19 @@
 }
 
 .BotonesRecuperarContraseña{
-    display:flex;
-    flex-direction:row;
-    text-align:center;
-    white-space:nowrap;
-    width:100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .botonEnviarEmail{
-    margin: 0 auto;
     text-align: center;
     border: 1px;
     border-style:solid;
     background-color: rgba(43, 255, 0, 0.5);
     border-radius: 3px;
     width: 10rem;
-    margin-left: 40%;
-    margin-right:2rem;
 }
 
 .botonCancelar{
@@ -89,7 +117,6 @@
     background-color: rgba(255, 0, 0, 0.5);
     border-radius: 3px;
     width: 10rem;
-    margin-right: 40%;
 }
 
 /* css de 3-registro-de-usuario */
@@ -101,28 +128,34 @@
     white-space:nowrap;
     margin:0 auto;
     text-align: center;
-    line-height: 4rem;
-    margin-top: 1rem;
+    margin-top: 5rem;
     padding-left: 8rem;
 }
 
 .Titulo{
+    margin-left: 30%;
+    margin-top:5%;
     font-weight:bold;
     font-size: 2.5rem;
     text-align: left;
-    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 1.2;
 }
 
 .IngresoDeDatos{
     display:flex;
     flex-direction: column;
+    justify-content: right;
     text-align:right;
-    line-height: 3rem;
+    line-height: 2rem;
     margin-right: 5rem;
     width:40%;
+    gap: 0.5rem;
 }
 
 .fila{
+    display:flex;
     justify-content:flex-end;
 }
 
@@ -138,29 +171,30 @@
 }
 
 .Botones{
-    display:flex;
-    flex-direction:row;
-    text-align:right;
-    white-space:nowrap;
-    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+    gap: 2rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding-left: 0;
 }
 
 .botonRegistroConfirmar{
     text-align: center;
     border: 1px;
-    border-style:solid;
+    border-style: solid;
     background-color: rgba(43, 255, 0, 0.5);
-    border-radius:3px;
-    margin-left:50%;
-    margin-right:2rem;
-    width:10rem;
+    border-radius: 3px;
+    width: 10rem;
 }
 
 .botonRegistroCancelar{
     text-align: center;
     border: 1px;
-    border-style:solid;
+    border-style: solid;
     background-color: rgba(255, 0, 0, 0.5);
     border-radius: 3px;
-    width:10rem;
+    width: 10rem;
 }
