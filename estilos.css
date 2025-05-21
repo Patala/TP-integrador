@@ -96,3 +96,11 @@ h1{
   border: 1px solid gray;
   box-sizing: border-box;
 }
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
