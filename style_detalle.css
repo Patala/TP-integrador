@@ -107,3 +107,65 @@ button
   font-size: 0.9rem;
   margin-top: 2rem;
 }
+
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
+  .contenedor1 {
+    grid-template-columns: 1fr; /* ahora todo en una sola columna */
+    padding: 1.5rem;
+  }
+  
+  .grilla-peliculas {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 576px) {  
+  /*header*/
+
+  .header__list-item {
+    height: 2rem;
+  }
+  
+  .header__list-item img {    
+    margin-right: 0.3rem;
+  }
+  .btn-primary {
+    font-size: 0.8rem;
+  }
+  
+  .contenedor1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .contenedor1 .iframe {
+    width: 100%;
+    height: 200px; 
+  }
+
+  .button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .detalle {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+    line-height: 1.4;
+  }
+
+  .enlace {
+    display: inline-block;
+    margin-right: 0.3rem;
+  }
+  /*grilla*/
+  .grilla-peliculas {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
