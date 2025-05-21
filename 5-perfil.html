@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro de usuario</title>
+</head>
+
+<body>
+    <main class="contenedorRegistroDeUsuario">
+        <article class="Titulo">
+            Registrarse <br>
+        </article>
+        <article class="IngresoDeDatos">
+            <div class="fila">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" name="Nombre" placeholder="Nombre">
+            </div>
+
+            <div class="fila">
+                <label for="apellido">Apellido</label>
+                <input id="apellido" type="text" name="Apellido" placeholder="Apellido">
+            </div>
+
+            <div class="fila">
+                <label for="email">E-mail</label>
+                <input id="email" type="text" name="e-mail" placeholder="Ingrese email">
+            </div>
+
+            <div class="fila">
+                <label for="usuario">Nombre de usuario</label>
+                <input id="usuario" type="text" name="NombreDeUsuario" placeholder="Nombre de usuario">
+            </div>
+
+            <div class="fila">
+                <label for="contraseña">Contraseña</label>
+                <input id="contraseña" type="password" name="Contraseña" placeholder="Contraseña">
+            </div>
+
+            <div class="fila">
+                <label for="RepetirContraseña">Repetir contraseña</label>
+                <input id="RepetirContraseña" type="password" name="RepetirContraseña" placeholder="Repetir contraseña">
+            </div>
+        </article>
+        <article class="MetodoDePago">
+            Método de pago<br>
+            <label class="Opciones">
+                <input type="radio" id="Tarjeta" name="MetodoDePago"> Tarjeta de crédito <br>
+                <input type="text" name="Tarjeta" placeholder="Número de tarjeta">&nbsp&nbsp<input type="text"
+                    name="CVC" placeholder="CVC">
+                <br>
+                <input type="radio" id="Cupon" name="MetodoDePago"> Cupon de pago <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="Tipo"> Pago facil&nbsp&nbsp <input type="radio"
+                    name="Tipo">RapiPago<br>
+                <input type="radio" id="Transferencia" name="MetodoDePago"> Transferencia bancaria <br>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CBU: 2183909411100018971375
+            </label>
+        </article>
+        <article class="Botones">
+            <p class="botonRegistroConfirmar">
+                <a href="index.html">Confirmar<br>
+                </a>
+            </p>
+            <p class="botonRegistroCancelar">
+                <a href="index.html">Cancelar<br>
+                </a>
+            </p>
+        </article>
+    </main>
+</body>
+
+</html>
