@@ -46,3 +46,38 @@ img{
 iframe{
     border-radius: 7px;
 }
+
+/*Header*/
+.header__list {
+    display: flex;       
+    list-style: none;    
+}
+
+.header__list-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+}
+
+.header__list-item {   
+    display: flex;
+    flex: 1;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+}
+
+.header__list-item:hover {
+  background-color: grey; 
+}
+
+
+.btn-primary:link,
+.btn-primary:visited,
+.btn-primary:hover,
+.btn-primary:active {
+  color: black;
+  text-decoration: none;
+}
+
