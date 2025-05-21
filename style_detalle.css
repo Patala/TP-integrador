@@ -33,7 +33,7 @@
 .btn-primary:visited,
 .btn-primary:hover,
 .btn-primary:active {
-  color: purple;
+  color: black;
   text-decoration: none;
 }
 /*body*/
@@ -63,7 +63,7 @@ a,
 .enlace :visited,
 .enlace :hover,
 .enlace :active {
-  color: black;
+  color: purple;
   text-decoration: none;
 }
 
