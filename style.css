@@ -4,17 +4,18 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
-main{
+main {
     flex: 1;
 }
 
-.contenedorFooter{
-    min-height:100vh;
+.contenedorFooter {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -22,34 +23,34 @@ main{
 /*Footer*/
 
 .footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-  width: 100%;
-  margin-left: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-left: 0;
 }
 
 /* css de index */
-.contenedorLogin{
-    display:flex;
-    flex-direction:column;
-    margin:0 auto;
-    line-height:2rem;
+.contenedorLogin {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    line-height: 2rem;
     flex: 1;
 }
 
-.imagen{
+.imagen {
     margin: 0 auto;
     margin-bottom: 3rem;
 }
 
-.logo{
+.logo {
     border-radius: 50px;
 }
 
-.login{
+.login {
     margin: 0 auto;
     text-align: right;
     margin-bottom: 1rem;
@@ -59,19 +60,19 @@ main{
     text-align: center;
     margin: 0 auto;
     border: 1px;
-    border-style:solid;
+    border-style: solid;
     background-color: rgba(43, 255, 0, 0.5);
     border-radius: 3px;
-    width:15rem;
+    width: 15rem;
     margin-bottom: 1.2rem;
 }
 
-.hyperlink{
+.hyperlink {
     text-align: center;
 }
 
 /* css de 2-recuperacion-de-contraseña */
-.contenedorRecuperacionDeContraseña{
+.contenedorRecuperacionDeContraseña {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,63 +80,63 @@ main{
     line-height: 2rem;
 }
 
-.recuperarContraseña{
-    font-weight:bold;
+.recuperarContraseña {
+    font-weight: bold;
     font-size: 2.3rem;
     text-align: center;
-    width:100%;
-    margin-bottom:2rem;
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
-.Registrarse{
+.Registrarse {
     margin: 0 auto;
     text-align: right;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
 }
 
-.BotonesRecuperarContraseña{
+.BotonesRecuperarContraseña {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.botonEnviarEmail{
+.botonEnviarEmail {
     text-align: center;
     border: 1px;
-    border-style:solid;
+    border-style: solid;
     background-color: rgba(43, 255, 0, 0.5);
     border-radius: 3px;
     width: 10rem;
 }
 
-.botonCancelar{
+.botonCancelar {
     margin: 0 auto;
     text-align: center;
     border: 1px;
-    border-style:solid;
+    border-style: solid;
     background-color: rgba(255, 0, 0, 0.5);
     border-radius: 3px;
     width: 10rem;
 }
 
 /* css de 3-registro-de-usuario */
-.contenedorRegistroDeUsuario{
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:row;
+.contenedorRegistroDeUsuario {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: left;
-    white-space:nowrap;
-    margin:0 auto;
+    white-space: nowrap;
+    margin: 0 auto;
     text-align: center;
     margin-top: 5rem;
     padding-left: 8rem;
 }
 
-.Titulo{
+.Titulo {
     margin-left: 30%;
-    margin-top:5%;
-    font-weight:bold;
+    margin-top: 5%;
+    font-weight: bold;
     font-size: 2.5rem;
     text-align: left;
     padding-bottom: 0;
@@ -143,34 +144,34 @@ main{
     line-height: 1.2;
 }
 
-.IngresoDeDatos{
-    display:flex;
+.IngresoDeDatos {
+    display: flex;
     flex-direction: column;
     justify-content: right;
-    text-align:right;
+    text-align: right;
     line-height: 2rem;
     margin-right: 5rem;
-    width:40%;
+    width: 40%;
     gap: 0.5rem;
 }
 
-.fila{
-    display:flex;
-    justify-content:flex-end;
+.fila {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .fila input {
-    padding:0.55rem;
+    padding: 0.55rem;
     margin-left: 1rem;
 }
 
-.MetodoDePago{
+.MetodoDePago {
     text-align: left;
     line-height: 2rem;
-    width:40%;
+    width: 40%;
 }
 
-.Botones{
+.Botones {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -181,7 +182,7 @@ main{
     padding-left: 0;
 }
 
-.botonRegistroConfirmar{
+.botonRegistroConfirmar {
     text-align: center;
     border: 1px;
     border-style: solid;
@@ -190,7 +191,7 @@ main{
     width: 10rem;
 }
 
-.botonRegistroCancelar{
+.botonRegistroCancelar {
     text-align: center;
     border: 1px;
     border-style: solid;
