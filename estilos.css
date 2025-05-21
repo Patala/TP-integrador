@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+h1{
+  margin: 10px;
+}
+
+.botones{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+}
+.botonGuardar{
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #90e692;
+  font-style: italic;
+  font-weight: 600;
+  border-radius: 7%;
+}
+.botonGuardar:hover{
+  background-color: #afffb0;
+
+}
+.botonCancelar{
+  margin: 20px;
+  padding: 9px;
+  background-color: #ff7149;
+  font-style: italic;
+  font-weight: 600;
+  border-radius: 7%;
+
+}
+.botonCancelar:hover{
+  background-color: #fc9275;
+  
+}
+
+.contenedor-datosymetodos{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.datos-usuario {
+ 
+  
+  display: flex;
+  align-items: self-start;
+}
+.datos-usuario img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.datos-usuario div {
+  flex: 1;
+}
+.datos-usuario input {
+  width: 50%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid gray;
+}
+
+.metodo-pago label {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.metodo-pago input {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.avatar{
+  width: 100px;
+  padding: 30px;
+  border-radius: 50%; 
+  margin-bottom: 20px;
+}
+
+.campos div {
+  margin-bottom: 10px;
+}
+
+.campos input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
