@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Perfil</title>
+</head>
+
+
+<body>
+    <main>
+        <section>
+            <h1>Perfil</h1>
+
+
+
+            <form action="#" method="get" class="contenedor-datosymetodos">
+
+                <div class="datos-usuario">
+                    <img src="../img/fotoperfil.png" alt="unlam" class="avatar">
+
+                    <div class="campos">
+                        <div>
+                            <label for="nombreUsuario">Nombre:</label>
+                            <input id="nombreUsuario" type="text" name="nombreUsuario" placeholder="Ingrese dato">
+                        </div>
+
+                        <div>
+                            <label for="email">E-mail:</label>
+                            <input id="email" type="email" name="e-mail" placeholder="usuario@ejemplo.com">
+                        </div>
+
+                        <div>
+                            <label for="nuevaContraseña">Nueva contraseña:</label>
+                            <input id="nuevaContraseña" type="password" name="nuevaContraseña"
+                                placeholder="Ingrese nueva contraseña">
+                        </div>
+                        <div>
+                            <label for="repetirContraseña">Repetir contraseña:</label>
+                            <input id="repetirContraseña" type="password" name="repetirContraseña"
+                                placeholder="Ingrese nueva contraseña">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metodo-pago">
+                    <h4>Metodo de pago</h4>
+
+                    <div>
+                        <label for="Tarjeta">Tarjeta</label>
+                        <input type="radio" id="Tarjeta" name="metodoDePago">
+
+                        <input type="text" name="numeroTarjeta" placeholder="Número de tarjeta">
+                        <input type="text" name="cvc" placeholder="CVC">
+                    </div>
+
+                    <div>
+                        <label for="metodoCupon">Cupon de pago</label>
+                        <input type="radio" id="metodoCupon" name="metodoDePago">
+
+                        <label for="cuponPagoFacil">Pago facil</label>
+                        <input type="radio" id="cuponPagoFacil" name="cupon">
+
+                        <label for="cuponRapiPago">RapiPago</label>
+                        <input type="radio" id="cuponRapiPago" name="cupon">
+                    </div>
+
+                    <div>
+                        <label for="transferencia">Transferencia bancaria</label>
+                        <input type="radio" id="transferencia" name="metodoDePago">
+                        <br>
+                        <p>CBU: 0070186630004018422536</p>
+                    </div>
+                </div>
+
+
+                <div class="botones">
+                    <button type="submit" class="botonGuardar">Guardar cambios</button>
+                    <button type="button" class="botonCancelar">Cancelar suscripcion</button>
+                </div>
+
+
+            </form>
+
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p>© 2025 UNFLIX - Todos los derechos reservados<br>
+            Cristian - Santiago - Valentin - Cristian
+        </p>
+    </footer>
+</body>
+
+</html>
