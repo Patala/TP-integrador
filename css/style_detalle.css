@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*main*/
+main {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
 /*header*/
 .header__list {
     display: flex;       
