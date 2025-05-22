@@ -5,10 +5,10 @@
 }
 
 /*main*/
-/*main {
+main {
   margin: 0 auto;
   max-width: 1600px;
-}*/
+}
 
 /*Header*/
 .header__list {
@@ -44,6 +44,12 @@
   text-decoration: none;
 }
 
+/*Titulo*/
+.titulo {
+    padding: 3rem 3rem 0rem 3rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
 
 
 /*Formularios*/
