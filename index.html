@@ -10,30 +10,27 @@
 
 <body>
     <div class="contenedorFooter">
+        <img class="logo" src="img/unflix.png" alt="Logo">
         <main class="contenedorLogin">
-
-            <article class="imagen">
-                <img class="logo" src="img/unflix.png" alt="Logo">
-            </article>
-            <article class="login">
+            <article class="formulario">
                 <div class="fila">
                     <label for="usuario">Nombre de usuario</label>
-                    <input id="usuario" type="text" name="NombreDeUsuario" placeholder="Nombre de usuario">
+                    <input id="usuario" type="text" name="NombreDeUsuario" placeholder="Nombre de usuario" required>
                 </div>
                 <div class="fila">
                     <label for="contraseña">Contraseña</label>
-                    <input id="contraseña" type="password" name="contraseña" placeholder="Contraseña">
+                    <input id="contraseña" type="password" name="contraseña" placeholder="Contraseña" required>
                 </div>
-            </article>
-            <article class="botonIniciarSesion"> <!-- Modificar estilos de los botones -->
-                <a href="html/pantalla_principal.html">Iniciar sesion<br>
-                </a>
-            </article>
-            <article class="hyperlink">
-                <a href="html/recuperacion_de_contraseña.html">Recuperar contraseña <br>
-                </a>
-                <a href="html/registro_de_usuario.html">Registrarse <br>
-                </a>
+                <p class="botonIniciarSesion">
+                    <a href="html/pantalla_principal.html">Iniciar sesion
+                    </a>
+                </p>
+                <p class="hyperlink">
+                    <a href="html/recuperacion_de_contraseña.html">Recuperar contraseña<br>
+                    </a>
+                    <a href="html/registro_de_usuario.html">Registrarse
+                    </a>
+                </p>
             </article>
         </main>
         <footer class="footer">

@@ -4,101 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Perfil</title>
 </head>
 
 
 <body>
-    <nav class="nav">
-      <ul class="header__list">
-        <li class="header__list-item"><a class="btn-primary" href="pantalla_principal.html"><img src="../img/icons/d.svg" alt="">Home</a></li>
-        <li class="header__list-item"><a class="btn-primary" href="series.html"><img src="../img/icons/film-solid.svg" alt="">Series</a></li>
-        <li class="header__list-item"><a class="btn-primary"href="peliculas.html"><img src="../img/icons/film-solid.svg" alt=""> Peliculas</a></li>
-        <li class="header__list-item"><a class="btn-primary" href="perfil.html"><img src="../img/icons/circle-user-solid.svg" alt="">Perfil</a></li>
-      </ul>
-    </nav>
-    <main>
-        <section>
-            <h1>Perfil</h1>
-
-
-
-            <form action="#" method="get" class="contenedor-datosymetodos">
-
-                <div class="datos-usuario">
-                    <img src="../img/fotoperfil.png" alt="unlam" class="avatar">
-
-                    <div class="campos">
-                        <div>
-                            <label for="nombreUsuario">Nombre:</label>
-                            <input id="nombreUsuario" type="text" name="nombreUsuario" placeholder="Ingrese dato">
-                        </div>
-
-                        <div>
-                            <label for="email">E-mail:</label>
-                            <input id="email" type="email" name="e-mail" placeholder="usuario@ejemplo.com">
-                        </div>
-
-                        <div>
-                            <label for="nuevaContraseña">Nueva contraseña:</label>
-                            <input id="nuevaContraseña" type="password" name="nuevaContraseña"
-                                placeholder="Ingrese nueva contraseña">
-                        </div>
-                        <div>
-                            <label for="repetirContraseña">Repetir contraseña:</label>
-                            <input id="repetirContraseña" type="password" name="repetirContraseña"
-                                placeholder="Ingrese nueva contraseña">
-                        </div>
+    <header>
+        <nav class="nav">
+            <ul class="header__list">
+                <li class="header__list-item"><a class="btn-primary" href="pantalla_principal.html"><img
+                            src="../img/icons/d.svg" alt="">Home</a></li>
+                <li class="header__list-item"><a class="btn-primary" href="series.html"><img
+                            src="../img/icons/film-solid.svg" alt="">Series</a></li>
+                <li class="header__list-item"><a class="btn-primary" href="peliculas.html"><img
+                            src="../img/icons/film-solid.svg" alt=""> Peliculas</a></li>
+                <li class="header__list-item"><a class="btn-primary" href="perfil.html"><img
+                            src="../img/icons/circle-user-solid.svg" alt="">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedorFooter">
+        <div class="contenedorMainYBotones">
+            <main class="contenedorRegistroYPerfil">
+                <article class="fotoPerfil">
+                    <img class="fotoPerfil" src="../img/fotoperfil.png" alt="Foto de perfil"><br>
+                    nombre de usuario
+                </article>
+                <article class="formulario">
+                    <div class="fila">
+                        <label for="email">E-mail</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp usuario@gmail.com
                     </div>
-                </div>
-
-                <div class="metodo-pago">
-                    <h4>Metodo de pago</h4>
-
-                    <div>
-                        <label for="Tarjeta">Tarjeta</label>
-                        <input type="radio" id="Tarjeta" name="metodoDePago">
-
-                        <input type="text" name="numeroTarjeta" placeholder="Número de tarjeta">
-                        <input type="text" name="cvc" placeholder="CVC">
+                    <div class="fila">
+                        <label for="contraseña">Contraseña</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*******
                     </div>
 
-                    <div>
-                        <label for="metodoCupon">Cupon de pago</label>
-                        <input type="radio" id="metodoCupon" name="metodoDePago">
-
-                        <label for="cuponPagoFacil">Pago facil</label>
-                        <input type="radio" id="cuponPagoFacil" name="cupon">
-
-                        <label for="cuponRapiPago">RapiPago</label>
-                        <input type="radio" id="cuponRapiPago" name="cupon">
+                    <div class="fila">
+                        <label for="NuevaContraseña">Nueva contraseña</label>
+                        <input id="NuevaContraseña" type="password" name="NuevaContraseña"
+                            placeholder="Nueva contraseña">
                     </div>
 
-                    <div>
-                        <label for="transferencia">Transferencia bancaria</label>
-                        <input type="radio" id="transferencia" name="metodoDePago">
+                    <div class="fila">
+                        <label for="RepetirContraseña">Repetir contraseña</label>
+                        <input id="RepetirContraseña" type="password" name="RepetirContraseña"
+                            placeholder="Repetir contraseña">
+                    </div>
+                </article>
+                <article class="metodoDePago">
+                    Método de pago<br>
+                    <label class="Opciones">
+                        <input type="radio" id="Tarjeta" name="MetodoDePago"> Tarjeta de crédito <br>
+                        <input type="text" name="Tarjeta" placeholder="Número de tarjeta">&nbsp&nbsp<input type="text"
+                            name="CVC" placeholder="CVC">
                         <br>
-                        <p>CBU: 0070186630004018422536</p>
-                    </div>
-                </div>
-
-
-                <div class="botones">
-                    <button type="submit" class="botonGuardar">Guardar cambios</button>
-                    <button type="button" class="botonCancelar">Cancelar suscripcion</button>
-                </div>
-
-
-            </form>
-
-        </section>
-
-    </main>
-    <footer class="footer">
-    <p>© 2025 UNFLIX - Todos los derechos reservados<br>
-      Cristian Dominguez - Santiago Patala - Valentin Himitian - Cristian Verduguez</p>
-    </footer>
+                        <input type="radio" id="Cupon" name="MetodoDePago"> Cupon de pago <br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="Tipo"> Pago facil&nbsp&nbsp <input
+                            type="radio" name="Tipo">RapiPago<br>
+                        <input type="radio" id="Transferencia" name="MetodoDePago"> Transferencia bancaria <br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CBU: 2183909411100018971375
+                    </label>
+                </article>
+            </main>
+            <article class="botones">
+                    <p class="botonRegistroConfirmar">
+                        <a href="../index.html">Confirmar<br>
+                        </a>
+                    </p>
+                    <p class="botonRegistroCancelar">
+                        <a href="../index.html">Cancelar<br>
+                        </a>
+                    </p>
+                </article>
+        </div>
+        <footer class="footer">
+            <p>© 2025 UNFLIX - Todos los derechos reservados<br>
+                Cristian Dominguez - Santiago Patala - Valentin Himitian - Cristian Verduguez
+            </p>
+        </footer>
+    </div>
 </body>
 
 </html>
