@@ -95,7 +95,6 @@ main {
     font-size: 0.9rem;
     width: 100%;
     margin-left: 0;
-    margin-top: 10%;
 }
 
 
@@ -119,10 +118,10 @@ main {
 
 .botonIniciarSesion {
     text-align: center;
-    margin: 0 auto;      
+    margin: 0 auto;
     width: 15rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;;
+    margin-bottom: 1rem;
 }
 
 .botonIniciarSesion input {
@@ -133,6 +132,7 @@ main {
     border-radius: 3px;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    cursor: pointer;
 }
 
 .botonIniciarSesion a {
@@ -154,6 +154,7 @@ main {
     gap: 3rem;
     flex-grow: 1;
     justify-content: center;
+    flex: 1;
 }
 
 .recuperarContraseña {
@@ -176,7 +177,7 @@ main {
 }
 
 .botonEnviarEmail {
-    text-align: center;   
+    text-align: center;
     width: 10rem;
 }
 
@@ -188,6 +189,7 @@ main {
     width: 100%;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    cursor: pointer;
 }
 
 .botonCancelar {
@@ -206,10 +208,15 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
+    align-items: flex-start;
     margin: 0 auto;
-    text-align: center;
-    gap: 2rem;
+    gap: 1rem;
+    padding: 4rem;
+}
+
+.contenedorRegistroYPerfil article {
+    align-self: flex-start;
 }
 
 .titulo {
@@ -233,10 +240,12 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 70%;
+    align-items: flex-start;
+    width: 100%;
     gap: 2rem;
     margin: 0 auto;
-    margin-top: 1rem;
+    line-height: 2rem;
+    margin-top: 0;
 }
 
 .botones a {
@@ -244,39 +253,29 @@ main {
     color: black;
 }
 
-.botonRegistroConfirmar {
-    text-align: center;
-    border: 1px;
-    border-style: solid;
-    background-color: rgba(43, 255, 0, 0.5);
-    border-radius: 3px;
-    width: 10rem;
-    cursor: pointer;
-}
-
+.botonRegistroConfirmar,
 .botonRegistroCancelar {
     text-align: center;
     border: 1px;
     border-style: solid;
-    background-color: rgba(255, 0, 0, 0.5);
     border-radius: 3px;
     width: 10rem;
     cursor: pointer;
 }
 
-
-/* css de perfil.html */
-.contenedorMainYBotones{
-    display:flex;
-    flex-direction:column;
-    flex-wrap: wrap;
-    justify-content: left;
-    margin: 0 auto;
-    text-align: center;
-    gap: 2rem;
-    line-height:2rem;
+.botonRegistroConfirmar {
+    background-color: rgba(43, 255, 0, 0.5);
 }
 
+.botonRegistroCancelar {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+/* css de perfil.html */
 .fotoPerfil {
     margin: 0 auto;
+}
+
+.nombreDeUsuario {
+    text-align: center;
 }

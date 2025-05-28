@@ -10,74 +10,71 @@
 
 
 <body>
-    <header>
-        <nav class="nav">
-            <ul class="header__list">
-                <li class="header__list-item"><a class="btn-primary" href="pantalla_principal.html"><img
-                            src="../img/icons/d.svg" alt="">Home</a></li>
-                <li class="header__list-item"><a class="btn-primary" href="series.html"><img
-                            src="../img/icons/film-solid.svg" alt="">Series</a></li>
-                <li class="header__list-item"><a class="btn-primary" href="peliculas.html"><img
-                            src="../img/icons/film-solid.svg" alt=""> Peliculas</a></li>
-                <li class="header__list-item"><a class="btn-primary" href="perfil.html"><img
-                            src="../img/icons/circle-user-solid.svg" alt="">Perfil</a></li>
-            </ul>
-        </nav>
-    </header>
     <div class="contenedorFooter">
-        <div class="contenedorMainYBotones">
-            <main class="contenedorRegistroYPerfil">
-                <article class="fotoPerfil">
-                    <img class="fotoPerfil" src="../img/fotoperfil.png" alt="Foto de perfil"><br>
-                    nombre de usuario
-                </article>
-                <article class="formulario">
-                    <div class="fila">
-                        <label
-                            for="email">E-mail</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                        usuario@gmail.com
-                    </div>
-                    <div class="fila">
-                        <label
-                            for="contraseña">Contraseña</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*******
-                    </div>
-
-                    <div class="fila">
-                        <label for="NuevaContraseña">Nueva contraseña</label>
-                        <input id="NuevaContraseña" type="password" name="NuevaContraseña"
-                            placeholder="Nueva contraseña">
-                    </div>
-
-                    <div class="fila">
-                        <label for="RepetirContraseña">Repetir contraseña</label>
-                        <input id="RepetirContraseña" type="password" name="RepetirContraseña"
-                            placeholder="Repetir contraseña">
-                    </div>
-                </article>
-                <article class="metodoDePago">
-                    Método de pago<br>
-                    <label class="Opciones">
-                        <input type="radio" id="Tarjeta" name="MetodoDePago"> Tarjeta de crédito <br>
-                        <input type="text" name="Tarjeta" placeholder="Número de tarjeta">&nbsp&nbsp<input type="text"
-                            name="CVC" placeholder="CVC">
-                        <br>
-                        <input type="radio" id="Cupon" name="MetodoDePago"> Cupon de pago <br>
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="Tipo"> Pago facil&nbsp&nbsp <input
-                            type="radio" name="Tipo">RapiPago<br>
-                        <input type="radio" id="Transferencia" name="MetodoDePago"> Transferencia bancaria <br>
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CBU: 2183909411100018971375
-                    </label>
-                </article>
-            </main>
-            <article class="botones">
-                <p class="botonRegistroConfirmar">
-                    Guardar cambios
-                </p>
-                <p class="botonRegistroCancelar">
-                    Cancelar suscripcion
-                </p>
+        <header>
+            <nav class="nav">
+                <ul class="header__list">
+                    <li class="header__list-item"><a class="btn-primary" href="pantalla_principal.html"><img
+                                src="../img/icons/d.svg" alt="">Home</a></li>
+                    <li class="header__list-item"><a class="btn-primary" href="series.html"><img
+                                src="../img/icons/film-solid.svg" alt="">Series</a></li>
+                    <li class="header__list-item"><a class="btn-primary" href="peliculas.html"><img
+                                src="../img/icons/film-solid.svg" alt=""> Peliculas</a></li>
+                    <li class="header__list-item"><a class="btn-primary" href="perfil.html"><img
+                                src="../img/icons/circle-user-solid.svg" alt="">Perfil</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contenedorRegistroYPerfil">
+            <article class="fotoPerfil">
+                <img class="fotoPerfil" src="../img/fotoperfil.png" alt="Foto de perfil">
+                <p class="nombreDeUsuario">nombre de usuario</p>
             </article>
-        </div>
+            <article class="formulario">
+                <div class="fila">
+                    <label
+                        for="email">E-mail</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    usuario@gmail.com
+                </div>
+                <div class="fila">
+                    <label
+                        for="contraseña">Contraseña</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*******
+                </div>
+
+                <div class="fila">
+                    <label for="NuevaContraseña">Nueva contraseña</label>
+                    <input id="NuevaContraseña" type="password" name="NuevaContraseña" placeholder="Nueva contraseña">
+                </div>
+
+                <div class="fila">
+                    <label for="RepetirContraseña">Repetir contraseña</label>
+                    <input id="RepetirContraseña" type="password" name="RepetirContraseña"
+                        placeholder="Repetir contraseña">
+                </div>
+            </article>
+            <article class="metodoDePago">
+                Método de pago<br>
+                <label class="Opciones">
+                    <input type="radio" id="Tarjeta" name="MetodoDePago"> Tarjeta de crédito <br>
+                    <input type="text" name="Tarjeta" placeholder="Número de tarjeta">&nbsp&nbsp<input type="text"
+                        name="CVC" placeholder="CVC">
+                    <br>
+                    <input type="radio" id="Cupon" name="MetodoDePago"> Cupon de pago <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="Tipo"> Pago facil&nbsp&nbsp <input
+                        type="radio" name="Tipo">RapiPago<br>
+                    <input type="radio" id="Transferencia" name="MetodoDePago"> Transferencia bancaria <br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CBU: 2183909411100018971375
+                </label>
+            </article>
+            <article class="botones">
+                <div class="botonRegistroConfirmar">
+                    Guardar cambios
+                </div>
+                <div class="botonRegistroCancelar">
+                    Cancelar suscripcion
+                </div>
+            </article>
+        </main>
         <footer class="footer">
             <p>© 2025 UNFLIX - Todos los derechos reservados<br>
                 Cristian Dominguez - Santiago Patala - Valentin Himitian - Cristian Verduguez
