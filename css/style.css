@@ -255,10 +255,7 @@ main {
 
 .botonRegistroConfirmar,
 .botonRegistroCancelar {
-    text-align: center;
-    border: 1px;
-    border-style: solid;
-    border-radius: 3px;
+    text-align: center;    
     width: 10rem;
     cursor: pointer;
 }
@@ -268,7 +265,17 @@ main {
 }
 
 .botonRegistroCancelar {
+   
+}
+.botonRegistroCancelar input {
     background-color: rgba(255, 0, 0, 0.5);
+    border: 1px;
+    border-style: solid;   
+    border-radius: 3px;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
 }
 
 /* css de perfil.html */
@@ -279,3 +286,18 @@ main {
 .nombreDeUsuario {
     text-align: center;
 }
+
+.form-registro {      
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    gap: 1rem;    
+}
+
+.form-registro .botones {
+    margin-top: 4rem;
+}
+
