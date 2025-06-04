@@ -212,7 +212,17 @@ main {
     align-items: flex-start;
     margin: 0 auto;
     gap: 1rem;
-    padding: 4rem;
+    padding-top: 4rem;
+}
+
+.form-registroYPerfil {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    gap: 1rem;
 }
 
 .contenedorRegistroYPerfil article {
@@ -264,9 +274,6 @@ main {
     background-color: rgba(43, 255, 0, 0.5);
 }
 
-.botonRegistroCancelar {
-   
-}
 .botonRegistroCancelar input {
     background-color: rgba(255, 0, 0, 0.5);
     border: 1px;
