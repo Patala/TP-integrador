@@ -98,7 +98,7 @@ main {
 }
 
 
-/* css de index.html */
+/* index.html */
 .contenedorLogin {
     display: flex;
     flex-direction: column;
@@ -114,6 +114,10 @@ main {
     height: auto;
     margin: 0 auto;
     display: block;
+}
+
+.botonIniciarSesion input:disabled{
+    cursor:not-allowed;
 }
 
 .botonIniciarSesion {
@@ -145,7 +149,7 @@ main {
 }
 
 
-/* css de recuperacion_de_contraseña.html */
+/* recuperacion_de_contraseña.html */
 .contenedorRecuperacionDeContraseña {
     display: flex;
     flex-direction: column;
@@ -203,7 +207,7 @@ main {
 }
 
 
-/* css de registro_de_usuario.html y perfil.html*/
+/* registro_de_usuario.html y perfil.html*/
 .contenedorRegistroYPerfil {
     display: flex;
     flex-wrap: wrap;
@@ -276,16 +280,16 @@ main {
 
 .botonRegistroCancelar input {
     background-color: rgba(255, 0, 0, 0.5);
-    border: 1px;
-    border-style: solid;   
     border-radius: 3px;
-    width: 100%;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    border-style: solid;   
+    border: 1px;
     cursor: pointer;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    width: 100%;
 }
 
-/* css de perfil.html */
+/* perfil.html */
 .fotoPerfil {
     margin: 0 auto;
 }

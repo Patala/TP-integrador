@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Login</title>
+    <title>UNFLIX - Login</title>
 </head>
 
 <body>
@@ -13,18 +13,17 @@
         <img class="logo" src="img/unflix.png" alt="Logo">
         <main class="contenedorLogin">
             <article class="formulario">
-                <form action="html/pantalla_principal.html" method="get">
+                <form id="formularioLogin" action="html/pantalla_principal.html" method="get">
                     <div class="fila">
                         <label for="usuario">Nombre de usuario</label>
-                        <input id="usuario" type="text" name="NombreDeUsuario" placeholder="Nombre de usuario" required>
+                        <input id="usuario" type="text" name="nombreDeUsuario" placeholder="Nombre de usuario" required>
                     </div>
                     <div class="fila">
                         <label for="contraseña">Contraseña</label>
                         <input id="contraseña" type="password" name="contraseña" placeholder="Contraseña" required>
                     </div>
-                    <p class="botonIniciarSesion">
-                        <input type="submit" value="Iniciar Sesion">
-                        
+                    <p class="botonIniciarSesion" id="botonLogin">
+                        <input type="submit" value="Iniciar Sesion" disabled>
                     </p>
                     <p class="hyperlink">
                         <a href="html/recuperacion_de_contraseña.html">Recuperar contraseña<br>
@@ -32,7 +31,7 @@
                         <a href="html/registro_de_usuario.html">Registrarse
                         </a>
                     </p>
-                </form>                
+                </form>
             </article>
         </main>
         <footer class="footer">
@@ -41,6 +40,7 @@
             </p>
         </footer>
     </div>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
