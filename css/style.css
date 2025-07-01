@@ -116,10 +116,6 @@ main {
     display: block;
 }
 
-.botonIniciarSesion input:disabled{
-    cursor:not-allowed;
-}
-
 .botonIniciarSesion {
     text-align: center;
     margin: 0 auto;
@@ -272,6 +268,10 @@ main {
     text-align: center;    
     width: 10rem;
     cursor: pointer;
+}
+
+.botonEnviarMail:disabled{
+    cursor:not-allowed;
 }
 
 .botonRegistroConfirmar {
