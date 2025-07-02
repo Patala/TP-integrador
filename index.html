@@ -16,14 +16,16 @@
                 <form id="formularioLogin" action="html/pantalla_principal.html" method="get">
                     <div class="fila">
                         <label for="usuario">Nombre de usuario</label>
-                        <input id="usuario" type="text" name="nombreDeUsuario" placeholder="Nombre de usuario" required>
+                        <input id="usuario" type="text" name="nombreDeUsuario" placeholder="Nombre de usuario" >
                     </div>
+                    <div class="js-usuario-error-index"></div>
                     <div class="fila">
                         <label for="contraseña">Contraseña</label>
-                        <input id="contraseña" type="password" name="contraseña" placeholder="Contraseña" required>
+                        <input id="contraseña" type="password" name="contraseña" placeholder="Contraseña" >
                     </div>
-                    <p class="botonIniciarSesion" id="botonLogin">
-                        <input type="submit" value="Iniciar Sesion">
+                     <div class="js-contraseña-error-index"></div>
+                    <p class="botonIniciarSesion" >
+                        <input type="submit" id="botonLogin" value="Iniciar Sesion">
                     </p>
                     <p class="hyperlink">
                         <a href="html/recuperacion_de_contraseña.html">Recuperar contraseña<br>
@@ -33,6 +35,7 @@
                     </p>
                 </form>
             </article>
+            <div class="error js-noSeEncontroUsuario-error"></div>
         </main>
         <footer class="footer">
             <p>© 2025 UNFLIX - Todos los derechos reservados<br>

@@ -28,14 +28,14 @@
         <main class="contenedorRegistroYPerfil">
             <article class="fotoPerfil">
                 <img class="fotoPerfil" src="../img/fotoperfil.png" alt="Foto de perfil">
-                <p class="nombreDeUsuario">nombre de usuario</p>
+                <p class="nombreDeUsuario"></p>
             </article>
-            <form class="form-registro" action="../index.html">
+            <form class="form-registro" >
                  <article class="formulario">
                     <div class="fila">
                         <label
-                            for="email">E-mail</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                        usuario@gmail.com
+                            for="email">E-mail</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <p class="js-emailUsuario"></p>
+                        
                     </div>
                     <div class="fila">
                         <label
@@ -43,38 +43,42 @@
                     </div>
 
                     <div class="fila">
-                        <label for="NuevaContraseña">Nueva contraseña</label>
-                        <input id="NuevaContraseña" type="password" name="NuevaContraseña" placeholder="Nueva contraseña" required>
+                        <label for="nuevaContraseña">Nueva contraseña</label>
+                        <input id="nuevaContraseña" type="password" name="NuevaContraseña" placeholder="Nueva contraseña" >
                     </div>
+                    <div class="error js-contraseña-error"></div>
 
                     <div class="fila">
                         <label for="RepetirContraseña">Repetir contraseña</label>
-                        <input id="RepetirContraseña" type="password" name="RepetirContraseña"
-                            placeholder="Repetir contraseña" required>
+                        <input id="RepetirContraseña" type="password" name="RepetirContraseña" placeholder="Repetir contraseña" >
                     </div>
+                    <div class="error js-repetirContraseña-error"></div>
                  </article>
                  <article class="metodoDePago">
                     Método de pago<br>
                     <label class="Opciones">
                         <input type="radio" id="Tarjeta" name="MetodoDePago" required> Tarjeta de crédito <br>
-                        <input type="text" name="Tarjeta" placeholder="Número de tarjeta">&nbsp&nbsp<input type="text"
-                            name="CVC" placeholder="CVC" required>
-                        <br>
-                        <input type="radio" id="Cupon" name="MetodoDePago" required> Cupon de pago <br>
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="Tipo" required> Pago facil&nbsp&nbsp <input
-                            type="radio" name="Tipo" required>RapiPago<br>
-                        <input type="radio" id="Transferencia" name="MetodoDePago" required> Transferencia bancaria <br>
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CBU: 2183909411100018971375
+                            <input type="text" class="tarjetaInput" name="Tarjeta" placeholder="Número de tarjeta" maxlength="16">&nbsp&nbsp
+                            <input type="text" class="cvcInput" name="CVC" placeholder="CVC" maxlength="3"><br>
+                        <input type="radio" id="Cupon" name="MetodoDePago" required> Cupon de pago <br>                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <input type="radio" name="Tipo" class="radioImput1" > Pago facil &nbsp&nbsp 
+                            <input type="radio" name="Tipo" class="radioImput2">RapiPago<br>
+                        <input type="radio" id="Transferencia" name="MetodoDePago" required> Transferencia bancaria <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CBU: 2183909411100018971375
                     </label>
+                    <div class="error js-metodoPago-error"></div>
                  </article>
                  <article class="botones">
                     <div class="botonEnviarEmail">
                         <input type="submit" value="Guardar cambios">
                     </div>
                     <div class="botonRegistroCancelar">
-                        <input type="button" value="Cancelar suscripción" onclick="window.location.href='../index.html'">
+                        <input type="button" class="botonRegistroCancelar" value="Cancelar suscripción" onclick="window.location.href='../index.html'">
+                    </div>
+                    <div class="botonEnviarEmail">
+                        <input type="button" class="cerrarSesion" value="Cerrar Sesión" onclick="window.location.href='../index.html'">
                     </div>
                  </article>
+                 <div class="exito"></div>
             </form>           
         </main>
         <footer class="footer">
@@ -83,6 +87,7 @@
             </p>
         </footer>
     </div>
+    <script src="../js/perfil.js"></script>
 </body>
 
 </html>

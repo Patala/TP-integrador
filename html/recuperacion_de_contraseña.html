@@ -14,21 +14,21 @@
             <article class="recuperarContraseña">
                 Recuperar contraseña
             </article>
-            <form action="../index.html">
+            <form class="formulario-recuperacion" action="../index.html">
                 <article class="formulario">
                 <div class="fila">
                     <label for="email">E-mail</label>
-                    <input id="email" type="text" name="e-mail" placeholder="Ingrese email" required>
+                    <input id="email" type="text" name="e-mail" placeholder="Ingrese email" >
                 </div>
                 <div class="fila">
                     <label for="usuario">Nombre de usuario</label>
                     <input id="usuario" type="text" name="NombreDeUsuario" placeholder="Ingrese nombre de usuario"
-                        required>
+                        >
                 </div>
             </article>
             <article class="botonesRecuperarContraseña">
                 <p class="botonEnviarEmail">
-                    <input type="submit" value="Enviar email">
+                    <input class="boton-recuperar" type="submit" value="Enviar email">
                 </p>
                 <p class="botonCancelar">
                     <a href="../index.html">Cancelar<br>
@@ -36,6 +36,7 @@
                 </p>
             </article>
             </form>
+            <div class="error js-noSeEncontroUsuario-error"></div>
             
         </main>
         <footer class="footer">
@@ -44,6 +45,7 @@
             </p>
         </footer>
     </div>
+    <script src="../js/recuperacion.js"></script>
 </body>
 
 </html>
