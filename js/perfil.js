@@ -144,8 +144,8 @@ const REGEX = {
 
         if (metodoPagoTarjeta.checked) {
             metodoPago = "Tarjeta";
-            numeroTarjetaBandera = numeroTarjetaInput;
-            cvcBandera = cvcInput;
+            numeroTarjetaBandera = numeroTarjetaInput.value.trim();
+            cvcBandera = cvcInput.value.trim();
         } else if (metodoPagoCupon.checked) {
             metodoPago = "Cupon";
             radiosTipo.forEach(radio => {
