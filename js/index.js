@@ -1,13 +1,21 @@
 function validarLogin() {
 
     //IMPUTS TO VALIDATE
-    const userList = JSON.parse(localStorage.getItem("usuarios"));
+    
     const formLogin = document.querySelector("#formularioLogin");
     const usuarioInput = formLogin.querySelector("#usuario");
     const contraseñaInput = formLogin.querySelector("#contraseña");
     const buttonLogin = formLogin.querySelector("#botonLogin");
     
+    
+    let userList = [];
 
+    const usuariosJSON = localStorage.getItem("usuarios");
+    if(!usuariosJSON) {
+        localStorage.setItem("usuarios", JSON.stringify(userList))
+    } else {
+        userList = JSON.parse(usuariosJSON);
+    }
     
 
     //VERIFICAR QUE LOS CAMPOS ESTEN COMPLETOS
