@@ -6,7 +6,7 @@ function validarRecuperarContraseña() {
     const emailInput = formRecuperacion.querySelector("#email");
     const usuarioInput = formRecuperacion.querySelector("#usuario");
     const buttonRecuperar = formRecuperacion.querySelector(".boton-recuperar");
-
+    
     //VERIFICAR QUE LOS CAMPOS ESTEN COMPLETOS
     function verificarCamposCompletos() {
         if (emailInput.value.trim() !== "" && usuarioInput.value.trim() !== "") {
