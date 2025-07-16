@@ -143,6 +143,12 @@ button
   counter-increment: gallery-cell; 
   margin: 0.5rem; 
 }
+ .carousel-cell img {
+    width: 100%;
+    height: 100%;
+   
+    border-radius: 5px; 
+  }
 
 @media only screen and (min-width: 577px) and (max-width: 1024px) {
   .contenedor1 {
@@ -163,12 +169,7 @@ button
     width: 50%;
   }
 
-  .carousel-cell img {
-    width: 100%;
-    height: 100%;
-   
-    border-radius: 5px; 
-  }
+ 
 
 }
 
