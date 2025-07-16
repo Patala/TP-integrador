@@ -4,10 +4,22 @@
     box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 /*main*/
 main {
+  flex: 1;  
   margin: 0 auto;
   max-width: 1600px;
+  width: 100%;
 }
 
 /*Header*/
@@ -66,7 +78,7 @@ main {
 .formulario-filtros {
   display: flex;
   justify-content: space-between;     
-  padding: 3rem;    
+  padding: 3rem;  
 }
 
 .filtro-categoria label {
@@ -109,6 +121,24 @@ select, input {
 .pelicula img {
   width: 100%;
   border-radius:5px;  
+}
+
+/*Boton favorito*/
+.btn-favorito {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.icono-favorito {
+  width: 1rem;
+  height: 1rem;
+  transition: transform 0.2s;
+}
+
+.btn-favorito:hover .icono-favorito {
+  transform: scale(1.2);
 }
 
 /*Footer*/

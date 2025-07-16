@@ -24,6 +24,16 @@ const REGEX = {
     const btnCancelar = document.querySelector(".botonRegistroCancelar");
     const btnCerrarSesion = document.querySelector(".cerrarSesion");
 
+
+    const metodoPagoTarjeta = formulario.querySelector("#Tarjeta");
+    const metodoPagoCupon = formulario.querySelector("#Cupon");
+    const metodoPagoTransferencia = formulario.querySelector("#Transferencia");
+
+    const radioPagoFacil = document.getElementById("PagoFacil");
+    const radioRapiPago = document.getElementById("RapiPago");
+
+    const inputNumeroTarjeta = formulario.querySelector("input[name='Tarjeta']");
+    const inputCVC = formulario.querySelector("input[name='CVC']");
   
 
     mostrarEmail.textContent = user.email;
@@ -92,9 +102,7 @@ const REGEX = {
         }
 
         //VALIDAR METODOS DE PAGO
-        const metodoPagoTarjeta = formulario.querySelector("#Tarjeta");
-        const metodoPagoCupon = formulario.querySelector("#Cupon");
-        const metodoPagoTransferencia = formulario.querySelector("#Transferencia");
+       
 
         
         const radiosTipo = formulario.querySelectorAll("input[name='Tipo']");
@@ -167,6 +175,11 @@ const REGEX = {
             user.metodoPago = metodoPago;
             user.tipoCupon = tipoCupon;
             user.contraseña = contraseñaNueva;
+            usuarioActual.numeroTarjeta = numeroTarjetaBandera;
+            usuarioActual.cvc= cvcBandera;
+            usuarioActual.metodoPago = metodoPago; 
+            usuarioActual.tipoCupon = tipoCupon;
+            usuarioActual.contraseña = contraseñaNueva;
             for (let i = 0; i < userList.length; i++) {
                 if (userList[i].usuario === usuarioActual.usuario) {
 
@@ -174,6 +187,7 @@ const REGEX = {
                 }           
             }
              localStorage.setItem("usuarios", JSON.stringify(userList));
+             localStorage.setItem("usuarioActual", JSON.stringify(usuarioActual));
              
             
             mensajeExito.textContent = "Datos actualizados";
@@ -203,9 +217,108 @@ const REGEX = {
         localStorage.removeItem("usuarioActual");  
     })
     
+    // ✅ Función para habilitar/deshabilitar radios del cupón
+    function actualizarRadiosCupon() {
+        if (metodoPagoCupon.checked) {
+            radioPagoFacil.disabled = false;
+            radioRapiPago.disabled = false;
+        } else {
+            radioPagoFacil.disabled = true;
+            radioPagoFacil.checked = false;
+            radioRapiPago.disabled = true;
+            radioRapiPago.checked = false;
+        }
+    }
+
+    function actualizarInputsTarjeta() {
+        if (metodoPagoTarjeta.checked) {
+            inputNumeroTarjeta.disabled = false;
+            inputCVC.disabled = false;
+        } else {
+            inputNumeroTarjeta.disabled = true;
+            inputCVC.disabled = true;
+            inputNumeroTarjeta.value = "";
+            inputCVC.value = "";
+        }
+    }
+    // Escuchar cambios
+    metodoPagoTarjeta.addEventListener("change", actualizarInputsTarjeta);
+    metodoPagoCupon.addEventListener("change", actualizarInputsTarjeta);
+    metodoPagoTransferencia.addEventListener("change", actualizarInputsTarjeta);
+
+
+    // Eventos para actualizar
+    metodoPagoTarjeta.addEventListener("change", actualizarRadiosCupon);
+    metodoPagoCupon.addEventListener("change", actualizarRadiosCupon);
+    metodoPagoTransferencia.addEventListener("change", actualizarRadiosCupon);
+
+    // Ejecutar al inicio
+    actualizarRadiosCupon();
+    actualizarInputsTarjeta();
+ }
+
+ hacerFuncionarPaginaPerfil();
+ agregarCarouselDeFavoritos();
+
+ function agregarCarouselDeFavoritos() {
+    const usuarioActual = JSON.parse(localStorage.getItem("usuarioActual"));
+    const titulo = document.querySelector(".titulo1");
+    const mainCarousel = document.querySelector(".main-carousel");
+
+    let tituloFav = titulo.querySelector("h1");
+
+    if (usuarioActual.favoritos.length > 0) {
+        let tituloFav = document.createElement("h1");
+        tituloFav.textContent = "Favoritos";
+        titulo.appendChild(tituloFav);
+        mainCarousel.style.display = "block";
+        generarCarousel(arrayDeFavoritos());
+    } else {
+        if (tituloFav) {
+            titulo.removeChild(tituloFav);
+        }
+        if (mainCarousel) {
+            mainCarousel.style.display = "none";  // Ocultar carousel
+        }
+    }
 
  }
 
+ function arrayDeFavoritos() {
+    const peliculasYseries = JSON.parse(localStorage.getItem("peliculasSeries"));
+    const peliculasFavoritas = [];
+    const usuarioActual = JSON.parse(localStorage.getItem("usuarioActual"));
 
+    for (let i=0; i<peliculasYseries.length; i++) {
+        for (let y=0; y<usuarioActual.favoritos.length; y++) {
+            if (peliculasYseries[i].nombre == usuarioActual.favoritos[y]) {
+                peliculasFavoritas.push(peliculasYseries[i]);
+            }
+        }            
+    }
+    return peliculasFavoritas;
+ }
 
- hacerFuncionarPaginaPerfil();
+ function  generarCarousel(elementos) {
+        const nodoRaiz = document.querySelector(".main-carousel");
+        for (let elemento of elementos) {
+            const nodoPelicula = document.createElement("div");
+            nodoPelicula.className = "carousel-cell";
+            if(elemento.tipo === "serie") {
+                nodoPelicula.innerHTML = `
+                <a href="detalle_serie.html?nombre=${encodeURIComponent(elemento.nombre)}" >
+                    <img src="${elemento.imagen}"  alt="${elemento.nombre}" style="width:100%;">
+                </a>            
+                `;   
+            } else if(elemento.tipo === "pelicula") {
+                nodoPelicula.innerHTML = `
+                <a href="detalle_pelicula.html?nombre=${encodeURIComponent(elemento.nombre)}" >
+                    <img src="${elemento.imagen}"  alt="${elemento.nombre}" style="width:100%;">
+                </a>            
+                `;  
+            }
+            
+        nodoRaiz.appendChild(nodoPelicula);            
+        }
+    }
+

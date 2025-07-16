@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Perfil</title>
 </head>
@@ -61,8 +62,8 @@
                             <input type="text" class="tarjetaInput" name="Tarjeta" placeholder="Número de tarjeta" maxlength="16">&nbsp&nbsp
                             <input type="text" class="cvcInput" name="CVC" placeholder="CVC" maxlength="3"><br>
                         <input type="radio" id="Cupon" name="MetodoDePago" required> Cupon de pago <br>                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                            <input type="radio" name="Tipo" class="radioImput1" > Pago facil &nbsp&nbsp 
-                            <input type="radio" name="Tipo" class="radioImput2">RapiPago<br>
+                            <input type="radio" name="Tipo" id="PagoFacil" class="radioImput1" > Pago facil &nbsp&nbsp 
+                            <input type="radio" name="Tipo" id="RapiPago" class="radioImput2">RapiPago<br>
                         <input type="radio" id="Transferencia" name="MetodoDePago" required> Transferencia bancaria <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp CBU: 2183909411100018971375
                     </label>
                     <div class="error js-metodoPago-error"></div>
@@ -77,9 +78,17 @@
                     <div class="botonEnviarEmail">
                         <input type="button" class="cerrarSesion" value="Cerrar Sesión" onclick="window.location.href='../index.html'">
                     </div>
-                 </article>
-                 <div class="exito"></div>
-            </form>           
+                 </article>     
+                 <div class="exito"></div>          
+            </form>    
+            <section>
+                <div class="titulo1">
+                        
+                </div>
+                <div class="main-carousel">   
+
+                </div>            
+            </section>       
         </main>
         <footer class="footer">
             <p>© 2025 UNFLIX - Todos los derechos reservados<br>
@@ -87,7 +96,10 @@
             </p>
         </footer>
     </div>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> 
+    <script src="../js/CargarDatos.js" ></script>
     <script src="../js/perfil.js"></script>
+    <script src="../js/carousel.js" ></script>
 </body>
 
 </html>

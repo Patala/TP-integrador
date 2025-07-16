@@ -5,14 +5,22 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    height: 100%;
-    width: 100%;
+html {
+  height: 100%;
 }
 
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*main*/
 main {
-    flex: 1;
+  flex: 1;  
+  margin: 0 auto;
+  max-width: 1600px;
+  width: 100%;
 }
 
 .formulario {
@@ -207,8 +215,7 @@ main {
 .contenedorRegistroYPerfil {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: row;    
     align-items: flex-start;
     margin: 0 auto;
     gap: 1rem;
@@ -324,4 +331,84 @@ main {
 
 .js-noSeEncontroUsuario-error {
     text-align: center;
+}
+
+.carousel-cell {
+  width: 25%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell; 
+  margin: 0.5rem;  
+}
+
+.titulo1 {
+    padding-left: 3rem;
+    font-size: 2rem;
+}
+
+.titulo1, 
+.main-carousel {
+    flex-basis: 100%;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.contenedorRegistroYPerfil > form,
+.contenedorRegistroYPerfil > section {
+    flex-basis: 100%;
+    width: 100%;
+}
+
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
+    .main-carousel {
+      margin: 0.5rem;
+    }
+
+    .carousel-cell {
+        width: 50%;
+    }
+
+    .carousel-cell img {
+        width: 100%;
+        height: 100%;
+    
+        border-radius: 5px; 
+    }
+}
+
+@media only screen and (max-width: 576px) {  
+  /*header*/
+
+  .header__list-item {
+    height: 2rem;
+  }
+  
+  .header__list-item img {    
+    margin-right: 0.3rem;
+  }
+  .btn-primary {
+    font-size: 0.8rem;
+  }
+  
+  .botones{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+   .main-carousel {
+        margin: 0.5rem;
+    }
+
+    .carousel-cell {
+        width: 100%;
+        height: 200px;
+        margin-right: 10px;
+        background: #8C8;
+        border-radius: 10px;
+        counter-increment: gallery-cell; 
+        margin: 0.5rem; 
+    }
+
 }

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="../css/style_detalle.css">
     <title>7-detalle-serie</title>
 
@@ -22,84 +23,40 @@
     </header>
     <main>
         <section class="contenedor1">
-            <div>
-                <iframe class="iframe" width=90% src="https://www.youtube.com/embed/ykLTd5aTa88"
-                    title="El Eternauta | Tráiler oficial | Netflix" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <a href=https://www.youtube.com/watch?v=ykLTd5aTa88&ab_channel=NetflixLatinoam%C3%A9rica
-                    target="_blank">
-                    <button class="button">&nbsp;Comenzar&nbsp;</button>
-                </a>
+            <div class="iframeDiv">
+                
             </div>
             <div class="detalle">
-                <article><b>Titulo:</b> El Eternauta</article><br>
-                <article><b>Temporada</b> <select name="select">
-                        <option value="value1">Temporada 1</option>
-                    </select>
-                </article><br>
-                <article><b>Capitulo:</b> <select name="select">
-                        <option value="value1">Capitulo 1</option>
-                        <option value="value2">Capitulo 2</option>
-                        <option value="value3">Capitulo 3</option>
-                        <option value="value4">Capitulo 4</option>
-                        <option value="value5">Capitulo 5</option>
-                        <option value="value6">Capitulo 6</option>
-                        <option value="value7">Capitulo 7</option>
-                    </select>
-                </article>
-                </article><br>
-                <article><b>Genero:</b> Acción, aventura, ciencia ficción</article><br>
-                <article><b>Actores:</b> <a href="https://es.wikipedia.org/wiki/Ricardo_Dar%C3%ADn"
-                        target="_blank">Ricardo Darín</a>,
-                    <a href="https://es.wikipedia.org/wiki/Carla_Peterson" target="_blank"> Carla Peterson</a>,
-                    <a href="https://es.wikipedia.org/wiki/C%C3%A9sar_Troncoso" target="_blank"> Cesar Troncoso</a>,
-                    <a href="https://es.wikipedia.org/wiki/Ariel_Staltari" target="_blank"> Ariel Staltari</a>
-
-
-
-                </article><br>
-                <article>Sigue a Juan Salvo junto a un grupo de supervivientes mientras luchan contra una amenaza
-                    alienígena que está bajo la dirección de una fuerza invisible después de que una horrible nevada se
-                    cobre la vida de millones de personas.</article><br>
-
+                <article class="articulo"><b>Titulo:</b> <p class="nombre"></p> </article><br>
+                <article><b>Temporada</b>
+                    <select id="select-temporada"></select>
+                 </article><br>
+                <article><b>Capitulo:</b>
+                    <select id="select-capitulo"></select>
+                </article>             
+                <article class="articulo" ><b>Genero:</b><p class="genero"></p></article><br>
+                <article class="articulo"><b>Actores:</b><p class="actores"></p></article><br>
+                <article><p class="sinopsis"></p></article><br>
             </div>
         </section>
         <section>
             <div class="titulo">
                 <h1>Similares</h1>
             </div>
-            <div class="grilla-peliculas">
-                <div class="pelicula">
-                    <a href="detalle_serie.html">
-                        <img src="https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/e8dfef9b-fa41-4041-8230-7dd832116f2e/7c00389e-26e0-4c19-ac2c-539a07c5a369?host=wbd-images.prod-vod.h264.io&partner=beamcom"
-                            width="100%">
-                    </a>
-                </div>
-                <div class="pelicula">
-                    <a href="detalle_serie.html">
-                        <img src="https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/f1c6ef16-40b2-4ef5-89ed-547decd9e620/5dea83be6452c285c4bcf58f0f1c951146040f2b.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom"
-                            width="100%">
-                    </a>
-                </div>
-                <div class="pelicula">
-                    <a href="detalle_serie.html">
-                        <img src="https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/aa5b9295-8f9c-44f5-809b-3f2b84badfbf/8a7dd34b09c9c25336a3d850d4c431455e1aaaf0.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom"
-                            width="100%">
-                    </a>
-                </div class="pelicula">
-                <div>
-                    <a href="detalle_serie.html"> <img
-                            src="https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/dfa50804-e6f6-4fa2-a732-693dbc50527b/e5ef7f60937f2fd5b1ace0ba9006424540141380.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom"
-                            width="100%"></a>
-                </div>
-            </div>
+            <div class="main-carousel">   
+
+            </div>            
         </section>
     </main>
     <footer class="footer">
         <p>© 2025 UNFLIX - Todos los derechos reservados<br>
             Cristian Dominguez - Santiago Patala - Valentin Himitian - Cristian Verduguez</p>
     </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>    
+    <script src="../json-data/peliculasYseries.js"></script>
+    <script src="../js/CargarDatos.js"></script>    
+    <script src="../js/detalle_series.js"></script>
+    <script src="../js/carousel.js"></script>
 </body>
 
 </html>
