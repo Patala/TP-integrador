@@ -32,7 +32,7 @@ function registroValidado() {
     const registroForm = document.querySelector(".form-registroYPerfil");
     const submitBtn = registroForm.querySelector(".botonEnviarEmail");
 
-    // ✅ Declarar métodos de pago y radios afuera
+    
     const metodoPagoTarjeta = registroForm.querySelector("#Tarjeta");
     const metodoPagoCupon = registroForm.querySelector("#Cupon");
     const metodoPagoTransferencia = registroForm.querySelector("#Transferencia");
@@ -46,7 +46,7 @@ function registroValidado() {
     
 
     registroForm.addEventListener("submit", function (event) {
-        // Inputs a validar
+       
         const userName = registroForm.querySelector("#nombre").value.trim();
         const userApellido = registroForm.querySelector("#apellido").value.trim();
         const email = registroForm.querySelector("#email").value.trim();
@@ -54,7 +54,7 @@ function registroValidado() {
         const contraseña = registroForm.querySelector("#contraseña").value.trim();
         const repetirContraseña = registroForm.querySelector("#RepetirContraseña").value.trim();
 
-        // Mensajes de error
+       
         const nombreError = registroForm.querySelector(".js-nombre-error");
         const apellidoError = registroForm.querySelector(".js-apellido-error");
         const emailError = registroForm.querySelector(".js-email-error");
@@ -63,7 +63,7 @@ function registroValidado() {
         const repetirContraseñaError = registroForm.querySelector(".js-repetirContraseña-error");
         const metodoPagoError = registroForm.querySelector(".js-metodoPago-error");
 
-        // Limpiar mensajes previos
+     
         nombreError.textContent = "";
         apellidoError.textContent = "";
         emailError.textContent = "";
@@ -172,12 +172,11 @@ function registroValidado() {
             }
         }
 
-        // Cancelar envío si hay errores
         if (!isFormValid) {
             event.preventDefault();
         }
 
-        // Guardar usuario si está todo válido
+        
         if (isFormValid) {
             let tipoCupon = "";
             radiosTipo.forEach(radio => {
@@ -217,7 +216,7 @@ function registroValidado() {
         }
     });
 
-    // ✅ Función para habilitar/deshabilitar radios del cupón
+   
     function actualizarRadiosCupon() {
         if (metodoPagoCupon.checked) {
             radioPagoFacil.disabled = false;
@@ -241,18 +240,18 @@ function registroValidado() {
         inputCVC.value = "";
     }
 }
-    // Escuchar cambios
+   
     metodoPagoTarjeta.addEventListener("change", actualizarInputsTarjeta);
     metodoPagoCupon.addEventListener("change", actualizarInputsTarjeta);
     metodoPagoTransferencia.addEventListener("change", actualizarInputsTarjeta);
 
 
-    // Eventos para actualizar
+    
     metodoPagoTarjeta.addEventListener("change", actualizarRadiosCupon);
     metodoPagoCupon.addEventListener("change", actualizarRadiosCupon);
     metodoPagoTransferencia.addEventListener("change", actualizarRadiosCupon);
 
-    // Ejecutar al inicio
+    
     actualizarRadiosCupon();
     actualizarInputsTarjeta();
 }
